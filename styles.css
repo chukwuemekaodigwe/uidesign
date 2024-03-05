@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --text-color: #2b3674;
+  --primary-text-color: #a3aed0;
+  --primary-blue: #77aef4;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+input,
+textarea,
+button,
+select,
+a,
+label,
+span,
+div,
+p {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  font-size: 1.5rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem;
+  height: 4rem;
+  border-radius: 4px;
+  background: var(--primary-blue);
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn:active {
+  outline: none;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="login.css" />
+    <script
+      src="https://kit.fontawesome.com/333ac72ff9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="login__container">
+      <img src="assets/img/login-img.png" alt="login-img" class="login-img" />
+      <form class="login__form">
+        <div class="login__form--logo">
+          <img src="assets/img/logo.png" alt="" />
+        </div>
+        <div class="login__form--header">
+          <h1>Register Account</h1>
+          <p>Enter your details below to register</p>
+        </div>
+        <div class="form__group">
+          <label for="email" class="form__group--label">Name</label>
+          <input
+            type="text"
+            class="form__group--input"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form__group">
+          <label for="email" class="form__group--label">Email*</label>
+          <input
+            type="text"
+            class="form__group--input"
+            placeholder="mail@simmmple.com"
+          />
+        </div>
+        <div class="form__group">
+          <label for="password" class="form__group--label">Password*</label>
+          <input
+            type="password"
+            class="form__group--input"
+            placeholder="Min 8. characters"
+          />
+        </div>
+        <div class="keep-logged">
+          <label class="flex-center keep-logged-check">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            i agree to the <a href="terms-of-services">Terms of Service</a> and
+            <a href="privacy-policy">Privacy Policy</a>
+          </label>
+        </div>
+        <div class="form__group">
+          <button class="btn btn-sign-in">Create Account</button>
+        </div>
+        <div class="flex-center line-container">
+          <div class="line"></div>
+          <span>or</span>
+          <div class="line"></div>
+        </div>
+        <div class="form__group">
+          <button class="btn btn-google">
+            <img src="./assets/icons/google-icon.svg" alt="google-icon" />
+            <span>Sign in with Google</span>
+          </button>
+        </div>
+
+        <span class="create-link">
+          Already have an account?
+          <a href="/login.html"> Sign In </a></span
+        >
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+.login__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+  height: 100dvh;
+  align-items: center;
+}
+.login-img {
+  width: 50rem;
+  height: 40rem;
+}
+@media (max-width: 900px) {
+  .login__container {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .login-img {
+    display: none;
+  }
+}
+.login__form {
+  padding: 1rem;
+  width: 50rem;
+}
+@media (max-width: 900px) {
+  .login__form {
+    width: 100%;
+  }
+}
+.login__form--logo {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.login__form--header {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.login__form--header h1 {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+.login__form--header p {
+  color: var(--primary-text-color);
+  font-size: 1.2rem;
+}
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 2rem;
+}
+.form__group--label {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.form__group--input {
+  padding: 1.1rem 1.4rem;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 3px;
+}
+
+.form__group--input:focus {
+  outline: none;
+}
+
+.form__group--input::placeholder {
+  color: var(--primary-text-color);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.1rem;
+}
+
+.keep-logged {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.keep-logged-check {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 300;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.custom-checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #eee;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-checkbox.checked {
+  background: var(--primary-blue);
+}
+.custom-checkbox::after {
+  content: "\2713";
+  font-size: 12px;
+  color: white;
+  display: none;
+}
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  display: block;
+}
+input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: var(--primary-blue);
+}
+
+.login__form--forget:visited,
+.login__form--forget:link {
+  text-decoration: none;
+  color: var(--primary-blue);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.btn-sign-in:hover {
+  background: #418ef0;
+}
+.line {
+  background: var(--primary-text-color);
+  height: 0.5px;
+  width: 100%;
+}
+
+.line-container {
+  margin-top: 3rem;
+  span {
+    color: var(--primary-text-color);
+    font-size: 1.3rem;
+  }
+}
+
+.btn-google {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  align-items: center;
+  background: #f4f7fe;
+  color: #2b3674;
+}
+
+.create-link {
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-top: 3rem;
+}
+.create-link a:visited,
+.create-link a:link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-blue);
+}
+
+.keep-logged-check a:visited,
+.keep-logged-check a:link {
+  text-decoration: none;
+  border-bottom: 1px solid var(--text-color);
+  color: var(--text-color);
+}
